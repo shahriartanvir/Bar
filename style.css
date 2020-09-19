@@ -1,0 +1,48 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+}
+.wrapper {
+    width: 1000px;
+}
+.main > li {
+    display: inline;
+    list-style: none;
+    position: relative;
+    background-color: dimgray;
+    margin: 10px ;
+    padding: 10px 15px;
+    line-height: 35px;
+    cursor: pointer;
+}
+ul > li:hover {
+    background-color: grey;
+    color: floralwhite;
+    transition: all ease 400ms;
+    left: 0px;
+    text-align: center;
+}
+.main > li > ul {
+    list-style: none;
+    display: none;
+}
+.main > li:hover > ul {
+    display: block;
+    position: absolute;
+    background-color: dimgray;
+    left: 0px;
+    width: 100%;
+    
+}
+.main > li > ul > li > ul {
+    display: none;
+    list-style: none;
+} 
+.main > li > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+    background-color: dimgray;
+    left: 100%;
+    width: 100%;
+    top: 66.66% ;
+}
